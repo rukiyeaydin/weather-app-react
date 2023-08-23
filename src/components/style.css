@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  color: white;
+}
+.container:before {
+  content: '';
+  background: url('/src/images/nigjt.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container .search h1{
+  font-family: 'Geologica', sans-serif;
+  font-size: 3rem;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search input{
+  width: 40vh;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  margin: 10px 0 10px 0;
+  font-weight: 700;
+  font-size: x-large;
+  text-align: center;
+}
+.search input:focus{
+  outline: none;
+  border-bottom: 3px solid #ff0000;
+}
+.search button{
+  width: 30vh;
+  height: 30px;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+  border: 3px solid rgba(4, 255, 21, 0.8);
+  background: rgba(255,255,255, 0.1);
+  border-radius: 30px;
+}
+.search button:hover{
+  background:  rgba(255, 255, 255, 0.5);
+}
+
+.info{
+  display: flex;
+  background-color: rgba(255,255,255, 0.3);
+  padding: 20px;
+  border-radius: 30px;
+}
+.tanim{
+  color: greenyellow;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.alt{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.derece, .nem ,.ruzgar-hizi{
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .info {
+    display: block;
+    margin: 10px;
+  }
+  .container .search h1{
+    font-size: 2rem;
+  }
+  .container .search button{
+    width: 25vh;
+  }
+}
